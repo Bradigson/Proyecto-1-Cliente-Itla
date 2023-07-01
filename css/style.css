@@ -1,0 +1,377 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+ }
+
+ /* header */
+ .header{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 999;
+ }
+
+ .header_nav
+ {
+    background: #262626;
+ }
+
+
+
+
+
+
+/* home */
+
+
+
+
+
+
+
+img{
+    max-height:250px;
+    padding: 1px;
+    
+}
+
+
+  .imghead{
+    width: 100%;
+    max-height: 500px;
+    }
+
+
+
+
+/* banner #2 sobre nosotros */
+  #sobre-nosotros{
+    background-color: rgb(33, 150, 243, 0.2);
+  
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+
+  .sobre-nosotros_container
+  {
+    width:60%;
+    height: 50vh;
+    padding: 0;
+  }
+
+  .sobre-nosotros_container > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  #servicios{
+    background:#eee;
+
+  }
+  #trabajos-realizados{
+    /* background-color: rgb(33, 150, 243, 0.2); */
+    margin-bottom: 10px;
+    background-color: rgb(33, 150, 243, 0.2);
+    padding: 1rem;
+  
+  }
+
+  .card
+  {
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow .2s;
+  }
+
+  .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  
+  
+  #certificaciones{
+    margin-bottom: 10px;
+    
+    
+  } 
+  #services-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+  /* bra code down below */
+
+
+
+  /* new aervices component */
+  .new_services
+  {
+    height: 100vh;
+    display: grid;
+    place-items: center ;
+  }
+
+
+  .new_services-container
+  {
+    width: 94%;
+  }
+
+  .new_services-container-title
+  {
+    text-align: center;
+  }
+
+  .new_services-container-boxes
+  {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+
+
+  .new_services-container-box
+  {
+    width:15rem;
+    height: 20rem;
+    background: #0a8cf7;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    text-align: center;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .5rem;
+  }
+
+
+  @-webkit-keyframes hvr-wobble-top {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  @keyframes hvr-wobble-top {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  .hvr-wobble-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .new_services-container-box:hover, .new_services-container-box:focus, .new_services-container-box:active {
+    -webkit-animation-name: hvr-wobble-top;
+    animation-name: hvr-wobble-top;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .clients{
+    background: #fff;
+    padding: 1rem;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .clients-container
+  {
+    width: 90%;
+  }
+  .clients_title
+  {
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+  }
+ 
+
+  .clients_contents
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+
+  .clients_contents-box
+  {
+    width:15rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin: 1rem;
+  }
+
+
+  .clients_contents-box > img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: box-shadow .3s;
+    border-radius: .6rem;
+  }
+
+
+  .clients_contents-box > img:hover
+  {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      
+  }
+
+
+
+
+
+  /* certificaciones */
+
+  .certificaciones
+  {
+    background-color: rgb(33, 150, 243, 0.2);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .certificaciones_container-father
+  {
+    width:80%;
+  }
+
+  .certificaciones_title
+  {
+    padding:1.5rem;
+    text-align: center  ;
+  }
+
+  .certificaciones_container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+
+
+  .certificaciones_container-box
+  {
+    width:15rem;
+    height:10rem;
+    margin:2rem;
+  }
+
+  .certificaciones_container-box > img{
+    width:100%;
+    height: 100%;
+    transition: box-shadow .3s;
+    border-radius: .6rem;
+  }
+
+  .certificaciones_container-box > img:hover
+  {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+
+
+  .footer
+  {
+    background: yellow;
+    height: 50vh;
+    background: #262626;
+    display: grid;
+    place-items: center;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+
