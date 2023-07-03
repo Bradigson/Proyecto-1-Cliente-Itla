@@ -512,3 +512,40 @@ img{
   {
   }
 }
+
+
+
+
+
+
+@media only screen and (min-width:1300px)
+{
+
+  .servicios_container-card
+  {
+    height: 31rem;
+    padding: 1.5rem;
+  }
+  .servicios-box-1
+  {
+    height: 80%;
+  }
+
+
+
+
+
+  .about_container
+  {
+    height: 40vh;
+  }
+
+ 
+  .about_container_description
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+}
