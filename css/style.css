@@ -578,14 +578,15 @@ img{
  
 }
 
-@media only screen and (min-width:1200px)
+@media only screen and (min-width:1200px) and (max-width:300px)
 {
 
   #servicios
   {
-    height: 82vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
+    
   }
 
   .servicios-title
@@ -635,5 +636,16 @@ img{
     height: 80%;
   }
 
+
+}
+
+
+@media only screen and (min-width:1100px) and (max-width:1200px){
+  #servicios
+  {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+  }
 
 }
