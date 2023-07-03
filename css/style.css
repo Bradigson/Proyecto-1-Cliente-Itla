@@ -400,7 +400,7 @@ img{
 }
 
 
-@media only screen and (max-width:1024px)
+@media only screen and (max-width:1100px)
 {
   #servicios
   {
@@ -518,7 +518,7 @@ img{
 
 
 
-@media only screen and (min-width:1200px)
+@media only screen and (min-width:1100px)
 {
 
   #servicios
@@ -576,6 +576,36 @@ img{
     object-fit: contain;
   }
  
+}
+
+@media only screen and (min-width:1200px)
+{
+
+  #servicios
+  {
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicios-title
+  {
+  }
+  .servicios_container
+  {
+    padding: 2rem;
+  }
+  .servicios_container-card
+  {
+    height: 31rem;
+    padding: 1.5rem;
+  }
+  .servicios-box-1
+  {
+    height: 80%;
+  }
+
+
 }
 
 @media only screen and (min-width:1300px)
