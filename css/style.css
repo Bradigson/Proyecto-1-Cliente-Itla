@@ -24,19 +24,22 @@ body{
 
 .home
 {
-  height:100vh;
+  
+  height: 100vh;
 }
 
 .home_container
 {
   margin-left: -1rem;
   margin-top: -.2rem;
+  height: 100%;
   
 }
 
 .home_container-content-1
 {
   width: 120%;
+  height:65vh;
 }
 .home_container-content-1 > img
 {
@@ -47,6 +50,7 @@ body{
 }
 
  .home_container-content-2{
+  height: 20vh;
  }
 
  .home_container-content-2 > img
