@@ -33,7 +33,6 @@ body{
   margin-left: -1rem;
   margin-top: -.2rem;
   height: 100%;
-  background: yellow;
   
 }
 
@@ -41,14 +40,13 @@ body{
 { 
   /* width: 120%; */
   height:65vh;
-  background: red;
 }
 .home_container-content-1 > img
 {
   width: 100%;
   height: 110%;
   object-fit:cover;
-  transform: scaleX(-1)
+  transform: scaleX(-1);
 
 }
 
