@@ -25,19 +25,20 @@ body{
 .home
 {
   
-  height: 100vh;
+  height: 95vh;
 }
 
 .home_container
 {
-  /* margin-left: -1rem;
-  margin-top: -.2rem; */
+  margin-left: -1rem;
+  margin-top: -.2rem;
   height: 100%;
+  background: yellow;
   
 }
 
 .home_container-content-1
-{
+{ 
   /* width: 120%; */
   height:65vh;
   background: red;
