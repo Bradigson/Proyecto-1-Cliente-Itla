@@ -1,285 +1,96 @@
-*{
-    margin: 0px;
-    padding: 0px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synapnet</title>
+  <link rel="stylesheet" href="https://unpkg.com/transition-style">
 
- }
-
- /* header */
- .header{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: fixed;
-    top:0;
-    width:100%;
-    z-index: 999;
- }
-
- .header_nav
- {
-    background: #262626;
- }
-
-body{
-  overflow-x: hidden;
-}
-
-.home
-{
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   
-  height: 95vh;
-}
+  <link rel="stylesheet" href="css/style.css">
 
-.home_container
-{
-  margin-left: -1rem;
-  margin-top: -.2rem;
-  height: 100%;
-  
-}
+  <link rel="stylesheet" href="https://unpkg.com/transition-style/transition.circles.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-.home_container-content-1
-{ 
-  /* width: 120%; */
-  height:65vh;
-}
-.home_container-content-1 > img
-{
-  width: 100%;
-  height: 110%;
-  object-fit:cover;
-  transform: scaleX(-1);
-
-}
-
- .home_container-content-2{
-  height: 20vh;
- }
-
- .home_container-content-2 > img
-{
-  width: 100%;
-  height: 100%;
-
-}
-/* home */
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
 
-
-
-
-
-
-img{
-    max-height:250px;
-    padding: 1px;
-    
-}
-
-
-  .imghead{
-    width: 100%;
-    max-height: 500px;
-    }
-
-
-/* about */
-
-.about
-{
-  background-color: rgb(33, 150, 243, 0.2);
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
-.about_container
-{
-  width:85%;
-  display: flex;
-  padding: 1rem;
-  height: 60%;
-  background: rgba(255,255,255, .5);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: .4rem;
-  
-}
-
-.about_container_img
-{
-  width:50%;
-}
-.about_container_img > img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(1px 2px 2px rgba(0,0,0,.4));
-}
-
-
-.about_container_description
-{
-  width: 50%;
-  padding: 1rem;
-}
-
-/* banner #2 sobre nosotros */
-  #sobre-nosotros{
-    background-color: rgb(33, 150, 243, 0.2);
-  
-    height: 100vh;
-    display: grid;
-    place-items: center;
-  }
-
-
-  .sobre-nosotros_container
-  {
-    width:60%;
-    height: 50vh;
-    padding: 0;
-  }
-
-  .sobre-nosotros_container > img{
-    width: 100%;
-    height: 100%;
-  }
-
-
-  #servicios{
-    height: 100vh;
-    display: grid;
-    place-items: center;
-
-
-  }
-
-  .servicios-title
-  {
-  }
-
-  .servicios_container
-  {
-    width: 100%;
-    padding: .2rem;
-  }
-
-
-
-  .servicios_container-card
-  {
-    height:78vh;
-    font-size: .4rem;
-    color:#fff;
-  }
-
+  <style>
  
-  #trabajos-realizados{
-    /* background-color: rgb(33, 150, 243, 0.2); */
-    margin-bottom: 10px;
-    background-color: rgb(33, 150, 243, 0.2);
-    padding: 1rem;
-  
-  }
+  </style>
+</head>
+<body>
 
-  .card
-  {
-    margin-top: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: box-shadow .2s;
-  }
+  <header style="background-image: url('fibra-optica.jpg'); " transition-style="in:wipe:right" class="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container" >
+        <a class="navbar-brand" href="#">
+          <img src="img/logo2.png" alt="Logo" style="width: 150px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
 
-  .card:hover{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  }
+            <li class="nav-item">
+              <a class="nav-link" href="#trabajos-realizados">Trabajos Realizados</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#clientes">Clientes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#certificaciones">Certificaciones</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#detalles-servicios">Detalles de Nuestros Servicios</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+             
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="slider" class="carousel slide d-none" data-bs-ride="carousel">
+      <div class="carousel-inner" style="max-height: 700px;">
+        
+        <div class="carousel-item active">
+          <img class="imghead" src="img/Asset 1.svg" class="d-block w-100" alt="Slider Image 1">
+        </div>
   
-  
-  #certificaciones{
-    margin-bottom: 10px;
+        <!-- Agrega aquí las demás imágenes del slider -->
+      </div>
     
-    
-  } 
-  #services-container{
-    display: flex;
-    flex-direction: column;
-  }
+    </div>
+  </header>
 
 
-
-
-
-
-
-
-  /* bra code down below */
-
-
-
-  /* new aervices component */
-  .new_services
-  {
-    height: 100vh;
-    display: grid;
-    place-items: center ;
-    display: none;
-  }
-
-
-  .new_services-container
-  {
-    width: 94%;
-    text-align: center;
-  }
-
-  .new_services-container-title
-  {
-    text-align: center;
-  }
-
-  .new_services-container-boxes
-  {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-
-  }
-
-
-  .new_services-container-box
-  {
-    width:20rem;
-    height: 20rem;
-    background: #0A6EBD;
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    text-align: center;
-    color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: .5rem;
-    padding: 1rem;
-  }
-
-
-
-  .new_services-container-box {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-  }
-  .new_services-container-box:hover, .new_services-container-box:focus, .new_services-container-box:active {
-    -webkit-transform: skew(-10deg);
-    transform: skew(-10deg);
-  }
+  <section  class="home" >
+    <article class="home_container" >
+      <div class="home_container-content-1" >
+        <img src="img/Asset 2.svg"/>
+      </div>
+      <div class="home_container-content-2">
+        <img src="img/Asset 1.svg"/>
+      </div>
+    </article>
+  </section>
 
 
 
@@ -294,425 +105,676 @@ img{
 
 
 
-  .clients{
-    padding: 1rem;
-    height: auto;
-    display: grid;
-    place-items: center;
-  }
-
-  .clients-container
-  {
-    width: 95%;
-  }
-  .clients_title
-  {
-    text-align: center;
-    text-shadow: 1px 2px 2px rgba(0,0,0,.4);
-  }
- 
-
-  .clients_contents
-  {
-    display: flex;
-    flex-wrap: wrap;
-    place-content: center;
-    margin-top: 2rem;
-  }
-
-  .clients_contents-box
-  {
-    width:14rem;
-    height: 10rem;
-    margin-top: 2rem;
-    margin: 1rem;
-  }
 
 
-  .clients_contents-box > img{
 
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: box-shadow .3s;
-    border-radius: .6rem;
-  }
+  <!-- Sección Sobre Nosotros -->
+  <section  class="d-none">
+
+    <div class="sobre-nosotros_container">
+      <img src="img/info2.jpg" alt="">
+    </div>
+
+  </section>
 
 
-  .clients_contents-box > img:hover
-  {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+
+  <section class="about" id="sobre-nosotros">
+    <div class="about_container" >
       
-  }
+     <div class="about_container_img">
+        <img src="img/logo2.png" alt="_Logo" >
+     </div>
 
+     <div class="about_container_description">
+      <h3>Sobre Nosotros</h3>
+      <p>Somos integradores de redes convergentes (vaz, datos y videos), apoyados en alianzas estratégicascon los más importantes fabricantes de la industria de telecomunicaciones.
+        A través de los años del crecimiento tecnológico y empresarial, hemos desarrollado un portafolio de productos y servicios completo y especializado, basado en entretenimientos y certificaciones
+        por los diversos fabricantes y gran experiencia laboral, garantizando asi, productos y servicios de excelente calidad, tal y como nuestros clientes lo merecen.
+      </p>
+     </div>
 
+    </div>
+  </section>
 
 
 
-  /* certificaciones */
 
-  .certificaciones
-  {
-    background-color: rgb(33, 150, 243, 0.2);
-    height: auto;
-    display: grid;
-    place-items: center;
-    padding: 1rem;
-  }
 
-  .certificaciones_container-father
-  {
-    width:80%;
-  }
 
-  .certificaciones_title
-  {
-    padding:1.5rem;
-    text-align: center  ;
-  }
-
-  .certificaciones_container
-  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-  }
-
-
-  .certificaciones_container-box
-  {
-    width:18rem;
-    height:10rem;
-    margin:2rem;
-  }
-
-  .certificaciones_container-box > img{
-    width:100%;
-    height: 100%;
-    transition: box-shadow .3s;
-    border-radius: .6rem;
-  }
 
-  .certificaciones_container-box > img:hover
-  {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
 
 
+  <section class="new_services ">
 
-  .footer
-  {
-    background: yellow;
-    height: 50vh;
-    background: #262626;
-    display: grid;
-    place-items: center;
-    color: #fff;
-  }
+    <div class="new_services-container">
 
+      <div class="new_services-container-title">
+        <h1>Servicios</h1>
+      </div>
 
+      <div class="new_services-container-boxes">
 
+        <div class="new_services-container-box">
+          <div  style="display: flex; justify-content: center;">
+            <div style="width:3rem; height: 3rem;">
+            <img src="./img/servicios/cable.png" style="width: 100%; height: 100%;"/>
+            </div>
+          </div>
+          <h3 style="font-size: 1rem;">SOLUCIONES DE<br/> FIBRA OPTICA</h3> <br>
+          <p style="font-size: .8rem;">Soluciones de conectividad de
+           fibra, incluso de cableado estructurado, con fibra
+          monomodo, multimodo 
+        y multimodo debanda ancha
+          OM5. Nuestro cableado esta certificado para cumplir o superar los estandares de la industria.</p>  
+        </div>
 
 
 
-@media only screen and (min-width:1150px)
-{
-    .new_services-container-box
-    {
-      width:15rem;
-      height: 20rem;
-      background: #0a8cf7;
-      margin: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-end;
-      text-align: center;
-      color: #fff;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      border-radius: .5rem;
-      padding: 1rem;
-    }
 
-}
+        <div class="new_services-container-box">
+          <div  style="display: flex; justify-content: center;">
+            <div style="width:3rem; height: 3rem;">
+            <img src="./img/servicios/cables.png" style="width: 100%; height: 100%;"/>
+            </div>
+          </div>
 
+          <h3 style="font-size: 1rem;">SOLUCIONES <br/>DE CABLEADO <br/>ESTRUCTURADO</h3> <br>
+          <p style="font-size: .8rem;">Como integrador lider de 
+          soluciones integrales de
+          cableado estructurado, ofrecemos la experiencia y 
+          el conocimiento que se 
+          necesitan para convertir su
+          infraestructura en un activo
+          comercial estrategico.</p> 
+        </div>
 
 
 
+        <div class="new_services-container-box">
+          <div  style="display: flex; justify-content: center;">
+            <div style="width:3rem; height: 3rem;">
+            <img src="./img/servicios/camera-360.png" style="width: 100%; height: 100%;"/>
+            </div>
+          </div>
+            <h3 style="font-size: 1rem;">VIDEO <br/>VIGILANCIA IP, <br/>CIRCUITO CERRADO <br/>Y CONTROL <br/>DE ACCESO</h3> <br>
+            <p style="font-size: .8rem;">Todo lo que necesita su empresa para garantizar la seguridad.</p> 
+        </div>
 
-@media only screen and (max-width:700px)
-{
-  /* about */
 
-  .about
-  {
-    background-color: rgb(33, 150, 243, 0.2);
-    height: 100vh;
-    display: grid;
-    place-items: center;
-  }
 
-  .about_container
-  {
-    width:95%;
-    display: flex;
-    height: 80%;
-    background: rgba(255,255,255, .5);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: .4rem;
-    flex-direction: column-reverse;
-    
-  }
+        <div class="new_services-container-box">
+          <div  style="display: flex; justify-content: center;">
+            <div style="width:3rem; height: 3rem;">
+            <img src="./img/servicios/diseno-grafico.png" style="width: 100%; height: 100%;"/>
+            </div>
+          </div>
 
-  .about_container_img
-  {
-    width:100%;
-    height:50%;
-  }
-  .about_container_img > img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(1px 2px 2px rgba(0,0,0,.4));
-  }
+            <h3 style="font-size: 1rem;">DISEÑO E <br/>IMPLEMENTACION <br/>DE DATACENTER<br/> INFRAESTRUXURE</h3> <br>
+            <p style="font-size: .8rem;">Desarrolamos "Centro de proceso de Datos de acuerdo a las necesidades de su empresa.</p>
 
+          </div>
+        </div>
+        
 
-  .about_container_description
-  {
-    width: 100%;
-    padding: 1rem;
-    font-size: .7rem;
-    height:50%;
+        <div class="new_services-container-box">
+          <div  style="display: flex; justify-content: center;">
+            <div style="width:3rem; height: 3rem;">
+            <img src="./img/servicios/call-center-service.png" style="width: 100%; height: 100%;"/>
+            </div>
+          </div>
 
-  }
+            <h3 style="font-size: 1rem;">CENTRAL <br/>TELEFONICA IP</h3> <br>
+            <p style="font-size: .8rem;">Ofrecemos serviciosde comunicacion a traves de una base datos en un servidor de comunicaciones seguras y confiables sin ncesidad de cableado.</p> 
+        </div>
 
+       
+      </div>
 
+    </div>
 
+  </section>
 
 
 
-  /* services */
 
-  .new_services{
-    height: auto;
-  }
 
-  .new_services-container
-  {
-  }
 
 
+  <!-- Sección Servicios -->
+  <section id="servicios" class="" id="servicios">
+    <div class="servicios-title text-center">
+      <h2>Servicios</h2>
+    </div>
+    <div  class="servicios_container text-center" style=" display: flex; justify-content: center; flex-wrap: wrap; height: 500px;">
+     
+      <!--TODO:SERVICIOS-->
+      
+        <div  class="row servicios_container-card" style="background-image: url('img/SVG/Recurso 1.svg'); background-repeat: no-repeat; display: flex; 
+          justify-self: center; justify-content: center; align-items: center; margin:1rem; ">
 
-
-
-
-  /* clients */
-
-  .clients
-  {
-    height: auto;
-  }
-
-  .clients-container
-  {
-  }
-
-
-
-
-  /* certificaciones */
-
-  .certificaciones
-  {
-    height: auto;
-  }
-
-  .certificaciones_container-father
-  {
-  }
-}
-
-
-
-@media only screen and (max-width:1024px)
-{
-  #servicios
-  {
-    display: none;
-  }
-
-  .new_services
-  {
-    height: auto;
-    display: grid;
-    place-items: center ;
-  }
-
-  .new_services-container
-  }
-}
-
-
-
-@media only screen and (min-width:1100px)
-{
-
-  #servicios
-  {
-    height: 130vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .servicios-title
-  {
-  }
-  .servicios_container
-  {
-    padding: 2rem;
-    height: 100%;
-  }
-  .servicios_container-card
-  {
-    height: 31rem;
-    padding: 1.5rem;
-  }
-  .servicios-box-1
-  {
-    height: 80%;
-  }
-
-
-
-
-
-  .about_container
-  {
-    height: 50vh;
-    align-items: center;
-  }
-
+          <div  class="md-3 servicios-box-1">
+            <div  style="display: flex; justify-content: center;">
+              <div style="width:3rem; height: 3rem;">
+              <img src="./img/servicios/cable.png" style="width: 100%; height: 100%;"/>
+              </div>
+            </div>
+            <h3 style="font-size: 1rem;">SOLUCIONES DE<br/> FIBRA OPTICA</h3> <br>
+            <p style="font-size: .7rem;">Soluciones de <br/>conectividad de<br/>
+             fibra, incluso<br/> de cableado <br/>estructurado, con fibra<br/>
+            monomodo, multimodo <br/>
+          y multimodo de<br/> banda ancha<br/>
+            OM5. Nuestro cableado esta <br/>certificado para cumplir o <br/>superar los estandares <br/>de la industria.</p>         
+          </div>
  
-  .about_container_description
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+        </div> 
+        
+      <div class="row servicios_container-card" style="background-image: url('img/SVG/Recurso 1.svg'); background-repeat: no-repeat; display: flex; 
+      justify-self: center; justify-content: center; align-items: center; margin:1rem; ">
 
-  .about_container_img
-  {
-    height: 50%;
+          <div  class="md-3 servicios-box-1" >
+            <div  style="display: flex; justify-content: center;">
+              <div style="width:3rem; height: 3rem;">
+              <img src="./img/servicios/cables.png" style="width: 100%; height: 100%;"/>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1rem;">SOLUCIONES <br/>DE CABLEADO <br/>ESTRUCTURADO</h3> <br>
+            <p style="font-size: .7rem;">Como integrador<br/> lider de <br/>
+            soluciones integrales de<br/>
+            cableado estructurado,<br/> ofrecemos la experiencia y <br/>
+            el conocimiento que se <br/>
+            necesitan para convertir su<br/>
+            infraestructura en un activo<br/>
+            comercial estrategico.</p> 
+
+          </div>
     
-  }
+        </div>
+        
+      <div class="row servicios_container-card" style="background-image: url('img/SVG/Recurso 1.svg'); background-repeat: no-repeat; display: flex; 
+      justify-self: center; justify-content: center; align-items: center; margin:1rem; ">
 
-  .about_container_img > img
-  {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
- 
-}
+        <div  class="md-3 servicios-box-1" >
+          <div  style="display: flex; justify-content: center;">
+            <div style="width:3rem; height: 3rem;">
+            <img src="./img/servicios/camera-360.png" style="width: 100%; height: 100%;"/>
+            </div>
+          </div>
+            <h3 style="font-size: 1rem;">VIDEO <br/>VIGILANCIA IP, <br/>CIRCUITO CERRADO <br/>Y CONTROL <br/>DE ACCESO</h3> <br>
+            <p style="font-size: .7rem;">Todo lo que necesita <br/>su empresa para <br/>garantizar la seguridad.</p>         
+          </div>
+          
+        </div>
+        
+        <div class="row servicios_container-card" style="background-image: url('img/SVG/Recurso 1.svg'); background-repeat: no-repeat; display: flex; 
+        justify-self: center; justify-content: center; align-items: center; margin:1rem; ">
+  
+          <div  class="md-3 servicios-box-1">
+            <div  style="display: flex; justify-content: center;">
+              <div style="width:3rem; height: 3rem;">
+              <img src="./img/servicios/diseno-grafico.png" style="width: 100%; height: 100%;"/>
+              </div>
+            </div>
 
-@media only screen and (min-width:1200px)
-{
+              <h3 style="font-size: 1rem;">DISEÑO E <br/>IMPLEMENTACION <br/>DE DATACENTER<br/> INFRAESTRUXURE</h3> <br>
+              <p style="font-size: .7rem;">Desarrolamos<br/> "Centro de proceso <br/>de Datos de acuerdo<br/> a las necesidades<br/> de su empresa.</p>         
+            </div>
+            
+          </div>
 
-  #servicios
-  {
-    height: 105vh;
-    display: flex;
-    flex-direction: column;
+
+          <div class="row servicios_container-card " style="background-image: url('img/SVG/Recurso 1.svg'); background-repeat: no-repeat; display: flex; 
+          justify-self: center; justify-content: center; align-items: center; margin:1rem;  " id="servicios_container-card">
     
-  }
-
-  .servicios-title
-  {
-  }
-  .servicios_container
-  {
-    padding: 2rem;
-  }
-  .servicios_container-card
-  {
-    height: 31rem;
-    padding: 1.5rem;
-  }
-  .servicios-box-1
-  {
-    height: 80%;
-  }
-
-
-}
-
-@media only screen and (min-width:1300px)
-{
-
-  #servicios
-  {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .servicios-title
-  {
-  }
-  .servicios_container
-  {
-    padding: 2rem;
-  }
-  .servicios_container-card
-  {
-    height: 31rem;
-    padding: 1.5rem;
-  }
-  .servicios-box-1
-  {
-    height: 80%;
-  }
-
-
-}
+            <div  class="md-3 servicios-box-1">
+              <div  style="display: flex; justify-content: center;">
+                <div style="width:3rem; height: 3rem;">
+                <img src="./img/servicios/call-center-service.png" style="width: 100%; height: 100%;"/>
+                </div>
+              </div>
+  
+                <h3 style="font-size: 1rem;">CENTRAL <br/>TELEFONICA IP</h3> <br>
+                <p style="font-size: .7rem;">Ofrecemos serviciosde <br/>comunicacion <br/>a traves de una base <br/>datos en un servidor <br/>de comunicaciones<br/> seguras y confiables <br/>sin ncesidad de<br/> cableado.</p>         
+              </div>
+              
+            </div>
+        
+  
+        </div>
+        
+        </div>
+      </div>
+     
+  
+    </div>
+       
+  </section>
 
 
 
 
-@media only screen and (min-width:1024px){
-  #servicios
-  {
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    
-  }
 
-  .new_services 
-  {
-    display: none;
-  }
 
-  .new_services-container
-  {
-  }
+
+
+
+
+
+
+
+
+
+
 
   
-  .servicios-title
-  {
-  }
-  .servicios_container
-  {
-    padding: 2rem;
-    height: 100%;
-  }
-  .servicios_container-card
-  {
-    height: 31rem;
-    padding: 1.5rem;
-  }
-  .servicios-box-1
-  {
-    height: 80%;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+<!-- Sección Trabajos Realizados -->
+<section id="trabajos-realizados" class="">
+  <div class="container text-center">
+    <h2>Trabajos Realizados</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen1.png" class="card-img-top" alt="Trabajo Realizado 1">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen2.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen3.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen4.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen5.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen6.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen7.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen8.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+     
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen9.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen10.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen11.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen12.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen13.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen14.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trabajos/Imagen11.png" class="card-img-top" alt="Trabajo Realizado 2">
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Sección Clientes -->
+<section class="clients " id="clientes">
+  <div class="clients-container">
+    
+    <div class="clients_title">
+      <h2>Clientes</h2>
+    </div>
+    <div class="clients_contents">
+  
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-1.jpeg" alt="Cliente 1" > 
+      </div>
+  
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-2.jpeg" alt="Cliente 2" style="margin-right: 5px;">
+      </div>
+  
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-3.jpg" alt="Cliente 2" style="margin-right: 5px;">
+      </div>
+  
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-4.jpg" alt="Cliente 2" style="margin-right: 5px;">
+      </div>
+  
+  
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-5.jpeg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-6.jpeg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-7.jpg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-8.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-9.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-10.jpeg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-11.jpeg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-12.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-13.jpeg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-14.png" alt="Cliente 2">
+      </div>
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-15.jpg" alt="Cliente 2">
+      </div>
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-16.jpeg" alt="Cliente 2">
+      </div>
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-17.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-18.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-19.png" alt="Cliente 2">
+      </div>
+      
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-20.jpeg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-21.jpeg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-22.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-23.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-24.jpg" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-25.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-26.png" alt="Cliente 2">
+      </div>
+
+        <div class="clients_contents-box">
+        <img src="img/clientes/img-27.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-28.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-29.png" alt="Cliente 2">
+      </div>
+
+      <div class="clients_contents-box">
+        <img src="img/clientes/img-30.jpg" alt="Cliente 2">
+      </div>
+
+    </div>
+
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Sección Certificaciones -->
+<section class="certificaciones " id="certificaciones">
+ <div class="certificaciones_container-father">
+   
+  <div  class="certificaciones_title">
+    <h2>Certificaciones</h2>
+  </div>
+
+
+  
+  <div class="certificaciones_container">
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-1.png" alt="Certificación 1">
+    </div>
+
+    <div class="certificaciones_container-box">
+        <img src="img/certificaciones/img-2.png" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-3.jpeg" alt="Certificación 2">
+    </div>
+
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-4.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-5.png" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-6.jpeg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-7.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-8.png" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-9.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-10.png" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-11.jpg" alt="Certificación 2">
+    </div>
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-12.png" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-13.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-14.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-15.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-16.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-17.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-18.jpg" alt="Certificación 2">
+    </div>
+
+    <div class="certificaciones_container-box">
+      <img src="img/certificaciones/img-19.png" alt="Certificación 2">
+    </div>
+
+   
+  </div>
+
+ </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer ">
+  <div>
+    
+    <!-- Sección Detalles de Nuestros Servicios -->
+    <section id="detalles-servicios">
+      <div class="container text-center">
+        <h2>Detalles de Nuestros Servicios</h2>
+        <!-- Agrega aquí el contenido de la sección -->
+      </div>
+    </section>
+
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+      <div class="container text-center">
+      <!--  <h2>Contacto</h2>-->
+        <div class="form-group">
+          <label for="">Contáctanos</label><br>
+          <h6>Puede llamarnos al <strong>809-309-2664</strong></h6>
+          <span> O puede ir directo a nuestro Whatsapp</span> <br>
+          <a href="https://wa.link/eyjvm5" target="_blank" ><i class="fab fa-whatsapp" style="color: green;"></i> ir a Whatsapp</a>
+
+          <h6>También puede escribirnos a nuestro correo <br> <strong>contacto@synapnet.com</strong> </h6>
+          <small id="helpId" class="text-muted"></small>
+        <!-- Agrega aquí el formulario de contacto o información de contacto -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div>
+      <div class="container text-center">
+        <img src="img/logo2.png" alt="Logo Footer" style="height: 50px;">
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
