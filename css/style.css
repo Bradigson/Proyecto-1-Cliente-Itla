@@ -4,6 +4,13 @@
 
  }
 
+
+ .slider-img-background{
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 100vh;
+ }
+
  /* header */
  .header{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -443,6 +450,12 @@ img{
 {
   /* about */
 
+  .slider-img-background{
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    height: 30vh;
+   }
+
   .about
   {
     background-color: rgb(33, 150, 243, 0.2);
@@ -547,8 +560,11 @@ img{
     place-items: center ;
   }
 
-  .new_services-container
-  }
+  .slider-img-background{
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    height: 40vh;
+   }
 }
 
 
